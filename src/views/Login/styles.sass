@@ -1,30 +1,19 @@
-.cadastro
+.login
     display: flex
     flex-direction: column
     text-align: center
 
-.campoCentralCadastro
-    padding: 2em
-    z-index: 1
-
-.textoCadastro
-    text-align: center
-    color: #3772FF
-
-.logoAzul img
-    width: 3em
-
-.formularioCadastro
+.formularioLogin
     display: flex
     flex-direction: column
     align-items: center
     margin-bottom: 5em
 
-.formularioCadastro label
+.formularioLogin label
     font-size: 1.5em
     margin-bottom: 0.3em
    
-.formularioCadastro input
+.formularioLogin input
     width: 50vw
     padding: 0.5em
     border-radius: 1em
@@ -32,46 +21,40 @@
     font-size: 1.5em
     margin-bottom: 1em
     background-color: #F7F7F7
-
-#senha1, #senha2
-    margin-left: 1em
     
-.formularioCadastro input::placeholder
+.formularioLogin input::placeholder
     font-size: 1.2em
     text-align: center
 
-.btnCadastrar
+.textoLogin
+    color: #3772FF
+
+.patas
+    position: absolute
+    top: 0
+    right: 0
+    width: 15em
+    z-index: -1
+
+.btnLogin
     background-color: #FC7071
     color: white
     width: 200px
     height: 40px
-    border: none
+    border: none 
     border-radius: 6px
     margin-bottom: 1em
     transition: 0.5s
     z-index: 1
     margin-top: 2em
 
-.btnCadastrar:hover
+.btnLogin:hover
     transform: scale(1.05)
     cursor: pointer
 
-.btnCadastrar:active
+.btnLogin:active
     transform: scale(0.95)
     cursor: pointer
 
-.visualizarSenha
-    position: relative
-    right: 3em
-
-.visualizarSenha:hover
-    cursor: pointer
-    opacity: 0.8
-
-@media screen and (max-width: 450px)
-    .formularioCadastro input
-        font-size: 0.8em
-    
-    .campoCentralCadastro
-        margin-top: 3em
-        
+#senha
+    margin-left: 1em

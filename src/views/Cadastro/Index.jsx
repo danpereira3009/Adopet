@@ -4,7 +4,7 @@ import FormaLateral from "../../components/FormaLateral/FormaLateral";
 import Footer from "../../components/Footer/Index"
 import Cabecalho from "../../components/Cabecalho/Cabecalho";
 import CampoCentral from "./CampoCentral";
-import Formulario from "./Formulario";
+import FormularioCadastro from "./FormularioCadastro";
 
 import "./styles.sass"
 
@@ -15,6 +15,6 @@ export default () =>
             <FormaVerdeSuperior />
             <FormaLateral /> 
             <CampoCentral />
-            <Formulario />
+            <FormularioCadastro />
             <Footer /> 
     </section>

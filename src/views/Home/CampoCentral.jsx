@@ -9,6 +9,6 @@ export default () =>
 <div className="centro">
     <LogoBranco className="logoCentral" />
     <TextoBoasVindas />
-    <Button text="Já tenho conta"/>
-    <Link to="/cadastro"><Button text="Quero me cadastrar"/></Link>
+    <Link to="/login"><Button text="Já tenho conta" className="btnHome" /></Link>
+    <Link to="/cadastro"><Button text="Quero me cadastrar" className="btnHome"/></Link>
 </div>
