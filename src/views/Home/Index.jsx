@@ -1,19 +1,19 @@
 import React from "react";
-import FormaVerdeSuperiorHome from "../../components/FormaSuperiorHome/FormaVerdeSuperiorHome";
-import FormaLateral from "../../components/FormaLateralHome/FormaLateral";
-import FormaInferior from "../../components/FormaInferiorHome/FormaInferior";
-import Footer from "../../components/Footer/Index"
-import CampoCentralHome from "../../components/Home/CampoCentralHome";
 import Cabecalho from "../../components/Cabecalho/Cabecalho";
-import "./Index.sass"
+import FormaVerdeSuperior from "../../components/FormaSuperior/FormaVerdeSuperior";
+import FormaLateral from "../../components/FormaLateral/FormaLateral";
+import FormaInferior from "../../components/FormaInferior/FormaInferior";
+import CampoCentral from "./CampoCentral";
+import Footer from "../../components/Footer/Index"
+import "./styles.sass"
 
 export default () => 
     
     <section className="home">
             <Cabecalho />
-            <FormaVerdeSuperiorHome />
+            <FormaVerdeSuperior />
             <FormaLateral /> 
-            <CampoCentralHome />
+            <CampoCentral />
             <FormaInferior />
             <Footer /> 
     </section>

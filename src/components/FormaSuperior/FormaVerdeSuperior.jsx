@@ -1,11 +1,11 @@
 import FormaVerdeSuperior from './FormaVerdeSuperior.svg'
 import FormaLinhaSuperior from './FormaLinhaSuperior.svg'
 
-import './FormaVerdeSuperiorHome.sass'
+import './FormaVerdeSuperior.sass'
 
 export default () =>
 
-<div>
+<div className='container'>
     <img className="FormaVerdeSuperior" src={FormaVerdeSuperior} />
     <img className="FormaLinhaSuperior" src={FormaLinhaSuperior} />
 </div>
