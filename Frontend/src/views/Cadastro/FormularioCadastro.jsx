@@ -8,7 +8,7 @@ export default class Formulario extends Component {
             
         return (
             
-                <form action="" method="post" className="formularioCadastro">
+                <form action="" method="post" className="formulario">
 
                     <label for="nome">Nome</label>
                     <input type="text" id="nome" required placeholder="Digite seu nome completo" />

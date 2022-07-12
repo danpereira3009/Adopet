@@ -9,20 +9,24 @@ import Footer from "./components/Footer/Index"
 import Cabecalho from "./components/Cabecalho/Index"
 import Mensagem from "./views/Mensagem/Index"
 import Perfil from "./views/Perfil/Index"
+import NotFound from "./views/NotFound/Index"
 
 export default function AppRouter() {
     return (
-        <Router>
-            <Cabecalho />
-            <Routes>
-                <Route path='/' element={<Home />}/>
-                <Route path='/cadastro' element={<Cadastro />}/>
-                <Route path='/login' element={<Login />}/>
-                <Route path='/animais' element={<Animais />}/>
-                <Route path='/mensagem' element={<Mensagem />}/>
-                <Route path='/perfil' element={<Perfil />}/>
-            </Routes>
-            <Footer />
-        </Router>
+        <main>
+            <Router>
+                <Cabecalho />
+                    <Routes>
+                        <Route path='/' element={<Home />} />
+                            <Route path='/cadastro' element={<Cadastro />}/>
+                            <Route path='/login' element={<Login />}/>
+                            <Route path='/animais' element={<Animais />}/>
+                            <Route path='/mensagem' element={<Mensagem />}/>
+                            <Route path='/perfil' element={<Perfil />}/>
+                            <Route path='*' element={<NotFound />}/>
+                        </Routes>
+                    <Footer />
+            </Router>
+        </main>
     );
 }

@@ -8,7 +8,7 @@ export default class Formulario extends Component {
     render() {
         return (
             
-                <form action="" method="get" className="formularioLogin">
+                <form action="" method="get" className="formulario">
 
                     <label for="email">Email</label>
                     <input type="email" id="email" required placeholder="Digite seu e-mail" />
