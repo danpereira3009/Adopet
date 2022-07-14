@@ -1,5 +1,5 @@
 import ImgNotFound from "../../assets/imgNotFound.jpg"
-import { Button } from "../../components/Button"
+import Button from "../../components/Button"
 import { useNavigate } from 'react-router-dom';
 import "./styles.sass"
 

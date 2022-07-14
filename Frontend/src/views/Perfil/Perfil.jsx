@@ -1,6 +1,6 @@
 import FotoPerfil from '../../assets/perfil.jpeg'
 import { Component } from 'react'
-import { Button } from "../../components/Button.jsx"
+import Button from "../../components/Button.jsx"
 import "./styles.sass"
 
 export default class Perfil extends Component {

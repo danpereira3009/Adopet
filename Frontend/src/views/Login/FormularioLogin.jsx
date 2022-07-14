@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Button } from "../../components/Button"
+import Button from "../../components/Button"
 import ShowPassword from "../../utils/funcoes"
 import VisualizarSenha from "../../components/VisualizarSenha"
 

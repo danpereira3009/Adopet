@@ -1,5 +1,5 @@
 import LogoBranco from "../../components/Logo/LogoBranco"
-import { Button } from "../../components/Button"
+import Button from "../../components/Button"
 import { Link } from 'react-router-dom'
 import './styles.sass'
 

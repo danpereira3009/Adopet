@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Button } from "../../components/Button"
+import Button from "../../components/Button"
 import "./styles.sass"
 
 export default class Formulario extends Component {
@@ -19,9 +19,7 @@ export default class Formulario extends Component {
 
                     <label for="mensagem">Mensagem</label>
                     <textarea type="text" className="sobre" rows="10" cols="95" required placeholder="Escreva uma mensagem" />
-
-                    
-                    
+                                   
                     <Button text="Enviar" className="btnEnviar"></Button>
 
                 </form>

@@ -4,7 +4,8 @@ import danielLogo from '../../assets/danielLogo.png'
 export default () =>
 
 <section className="footer">
-    <img src="" alt="" />
-    <h1>Desenvolvido por Daniel</h1>
-    <img src={danielLogo} className="danielLogo" />
+    <h1>Codado por Daniel Pereira em parceria com ©Alura</h1>
+    <div className='imgFooter'>
+        <img src={danielLogo} className="danielLogo" />
+    </div>
 </section>
