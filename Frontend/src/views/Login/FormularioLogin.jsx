@@ -10,8 +10,8 @@ export default class Formulario extends Component {
             
                 <form action="" method="get" className="formulario">
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" required placeholder="Digite seu e-mail" />
+                    <label for="user">Usuario</label>
+                    <input type="text" id="email" required placeholder="Digite seu e-mail" />
 
                     <label for="senha">Senha</label>
                     <div>
