@@ -26,23 +26,42 @@
     color: #737380
     font-size: 12px
 
-.divAnimal img
+.divFotoPet
     position: relative
     top: 2em
     right: 2em
 
-.responsavel
-    display: flex
-    width: 15em
+.imgAnimal
+    min-width: 9em
+    min-height: 9em
+    max-width: 9em
+    max-height: 9em
 
-.responsavel img
-    position: relative
-    top: 0
-    left: 0
+.container_responsavel
+    display: flex
+    width: 20em
+    margin-top: 2em
+
+.container_responsavel img
     margin-right: 1em
 
 .responsavel img:hover
     cursor: pointer
+
+.lixeira
+    width: 2em
+    height: 2em
+    stroke: blue
+    position: relative
+    top: 1em
+    right: 2em
+
+.lixeira:hover
+    cursor: pointer
+    transform: scale(1.1)
+    transition: 300ms
+    border-color: red
+    stroke: blue
 
 @media screen and (max-width: 450px)
 

@@ -7,7 +7,7 @@ export default class Formulario extends Component {
             
         return (
     
-    <section className="cadastro">
+    <section className="container_cadastro">
         <TextoCadastro />
         <FormularioCadastroPet />
     </section>

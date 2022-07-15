@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 const ShowPassword = (id) => {
     var senha = document.getElementById(id);
     if (senha.type === "password") {
@@ -8,7 +10,7 @@ const ShowPassword = (id) => {
   }
 
 export const whatsApp = (telefone, nome) => {
-  window.open(`https://web.whatsapp.com/send?phone=${telefone}&text=Converse%20comigo%20sobre%20o%20${nome}`, "_blank")
+  window.open(`https://web.whatsapp.com/send?phone=${telefone}&text=Olá,%20estou%20interessado%20em%20adotar%20a%20${nome}`, "_blank")
 }
 
 export default ShowPassword
