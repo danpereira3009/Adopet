@@ -3,13 +3,14 @@ import mongoose from "mongoose";
 const animalSchema = new mongoose.Schema(
     {
         id: {type: String},
-        nome: {type: String, required: true},
-        idade: {type: String, required: true},
-        porte: {type: String, required: true},
+        nome: {type: String},
+        idade: {type: String},
+        especie: {type: String},
+        porte: {type: String},
         descricao: {type: String},
-        localizacao: {type: String, required: true},
-        responsavel: {type: String, required: true},
-        whats: {type: String, required: true},
+        cidade: {type: String},
+        responsavel: {type: String},
+        telefone: {type: String},
         img: {type: String}
     }
 );

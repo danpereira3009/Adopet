@@ -6,7 +6,7 @@ export default class Olho extends Component {
         return (
 
             <img 
-            className="visualizarSenha" 
+            className={this.props.className} 
             src={VisualizarSenha}
             onClick={this.props.onClick}
             id={this.props.id}

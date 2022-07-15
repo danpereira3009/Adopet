@@ -4,7 +4,7 @@ const ShowPassword = (id) => {
     var senha = document.getElementById(id);
     if (senha.type === "password") {
       senha.type = "text";
-    } else {
+    } else { 
       senha.type = "password";
     }
   }

@@ -4,5 +4,5 @@ import Img from '../../assets/ImgInferior.png'
 export default () =>
 
 <div className='formaInferior'>
-    <img className='img' src={Img} />
+    <img src={Img} alt="Desenho de um cão e gato" />
 </div>
