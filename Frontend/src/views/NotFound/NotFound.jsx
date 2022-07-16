@@ -7,13 +7,9 @@ export default () => {
     const navigate = useNavigate();
     return (
 
-<section>
-        <Button text="< Voltar" className="btnVoltar" onClick={() => navigate(-1)} />
-
-    <div className="notFound">
-        <img src={ImgNotFound} alt="Página não encontrada" />
-    </div>
-
+<section className="pageNotFound">
+    <img className="notFound" src={ImgNotFound} alt="Página não encontrada" />
+    <Button text="< Voltar" className="btnVoltar" onClick={() => navigate(-1)} />
 </section>
 
     )

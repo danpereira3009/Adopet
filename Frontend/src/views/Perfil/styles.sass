@@ -1,21 +1,23 @@
-.campoCentralPerfil
+.containerPerfil
     display: flex
-    flex-direction: column
-    width: 60%
-    height: 50%
-    background-color: #F7F7F7
-    border-radius: 1em
-    margin-bottom: 3em
+    justify-content: center
 
 .textoPerfil
     text-align: center
     color: #3772FF
+    font-size: 1.5em
+
+.perfil
+    margin-top: 3em
+    z-index: 1
+
+
 
 .perfil h1
     margin-left: 1em
     color: #3772FF
     font-weight: bold
-
+    
 .perfil p
     margin-left: 2em
     font-size: 1.2em
@@ -54,14 +56,12 @@
     z-index: 1
     margin-top: 2em
     font-size: 1.2em
-
-.btnEditar:hover
-    transform: scale(1.05)
-    cursor: pointer
-
-.btnEditar:active
-    transform: scale(0.95)
-    cursor: pointer
+    &:hover
+        transform: scale(1.05)
+        cursor: pointer
+        &:active
+            transform: scale(0.95)
+            cursor: pointer
 
 .btn
     display: flex

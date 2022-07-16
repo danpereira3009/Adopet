@@ -1,33 +1,35 @@
-.login
+.cadastro
     display: flex
     flex-direction: column
     text-align: center
-    min-height: 85vh
 
-.campoCentralLogin
-    margin-top: 7em
-
-.textoLogin
-    color: #3772FF
-
-.patas
-    position: absolute
-    top: 0
-    right: 0
-    width: 15em
+.campoCentralCadastro
+    padding: 2em
     z-index: 1
 
-.btnLogin
+.logoAzul img
+    width: 3em
+
+.inputSenha
+    margin-left: 1.1em
+
+.formCadastroUser
+    display: flex
+    flex-direction: column
+
+.btnCadastrar
     background-color: #FC7071
     color: white
     width: 200px
     height: 40px
-    border: none 
+    border: none
     border-radius: 6px
     margin-bottom: 1em
     transition: 0.5s
     z-index: 1
     margin-top: 2em
+    align-self: center
+    margin: 2em
     &:hover
         transform: scale(1.05)
         cursor: pointer
@@ -35,10 +37,7 @@
             transform: scale(0.95)
             cursor: pointer
 
-.Usuario
-    margin-right: 2em
-
-.inputLogin
+.inputCadastrarUsuario
     width: 30vw
     padding: 1em
     box-shadow: 2px 2px 2px gray
@@ -49,21 +48,23 @@
         transition: 500ms
         background-color: #f7e1e1
 
-.inputLogin:focus::-webkit-input-placeholder
+.inputCadastrarUsuario:focus::-webkit-input-placeholder
    color: transparent
 
-.olhoLogin
+.olhoUsuario
     position: relative 
     right: 2em
     &:hover
         cursor: pointer
 
-#senha
-    margin-left: 1.4em
-    
 @media screen and (max-width: 450px)
-    .campoCentralLogin
-        margin-top: 10em
+    .formularioCadastro input
+        font-size: 1em
+        width: 18em
+        z-index: 1
+    
+    .campoCentralCadastro
+        margin-top: 7em
 
 @media screen and (max-width: 800px)
     .patas

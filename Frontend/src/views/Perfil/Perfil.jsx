@@ -1,13 +1,21 @@
+import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 import FotoPerfil from '../../assets/perfil.jpeg'
-import { Component } from 'react'
 import Button from "../../components/Button.jsx"
+import axios from 'axios'
 import "./styles.sass"
 
-export default class Perfil extends Component {
-    render() {
+export default () => {
+
+        const [user, setUser] = useState("")
+        useEffect(() => {
+            axios.get('http://localhost:3000/usuario/62d30a35f79b0eda91e8d98f').then(response => {setUser(response.data)})
+        })
         return (
 
                 <div className="perfil">
+
+                <h1 className="textoPerfil">Esse é o perfil que aparece para responsáveis ou ONGs <br/>que recebem sua mensagem.</h1>
 
                     <h2>Perfil</h2>
 
@@ -21,7 +29,7 @@ export default class Perfil extends Component {
 
                     <div>
                         <h1>Nome</h1>
-                        <p>Daniel Luiz Pereira</p>
+                        <p>Daniel</p>
                     </div>
 
                     <div>
@@ -40,9 +48,8 @@ export default class Perfil extends Component {
                     </div>
 
                     <div className='btn'>
-                        <Button className="btnEditar" text="Editar" type=""></Button>
+                        <Link to="/editarPerfil"><Button className="btnEditar" text="Editar" type="button"></Button></Link>
                     </div>
               </div>
         )
     }
-}

@@ -26,6 +26,12 @@
     box-shadow: 2px 2px 2px gray
     background-color: #F7F7F7
     margin: 0.5em 0 0 0
+    &:focus
+        transition: 500ms
+        background-color: #f7e1e1
+
+.inputCadastrarPet:focus::-webkit-input-placeholder
+   color: transparent
 
 .inputArquivos
     color: #DBDBDB
@@ -45,7 +51,6 @@
     cursor: pointer
     height: 18em
     width: 35vw
-    border: solid 1px black
 
 .btnCadastrarPet
     background-color: #FC7071

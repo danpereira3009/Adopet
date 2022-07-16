@@ -2,31 +2,33 @@ import { Component } from "react";
 import Button from "../../components/Button"
 import ShowPassword from "../../utils/funcoes"
 import VisualizarSenha from "../../components/VisualizarSenha"
+import axios from "axios";
+import { useNavigate } from "react-router-dom"
 
+export default () => { 
 
-export default class Formulario extends Component {
-    render() {
+    let navigate = useNavigate();
+
         return (
             
-                <form action="" method="get" className="formulario">
+                <form 
+                    className="formulario"
+                    onSubmit={ async (e) => {
+                    e.preventDefault()
+                    await axios.post('http://localhost:3000/usuario/login', {email: e.target.email.value, senha: e.target.senha.value})
+                    navigate("/perfil")}}>
 
-                <div className="Usuario">
-                    <label for="user">Usuario:</label>
-                    <input type="text" id="email" required placeholder="Digite seu nome de usuário, e-mail ou cpf" />
-                </div>
+                    <input name="email" className="inputLogin" type="text" id="email" required placeholder="Digite seu e-mail" />
 
-                
-                <div>
-                    <label for="senha">Senha:</label>
-                    <input type="password" id="senha" required placeholder="Digite sua senha" />
-                    <VisualizarSenha className="olho" onClick={() => ShowPassword('senha')}/>
-                </div>
-                
-                <Button text="Entrar" className="btnLogin"></Button>
+                    <div>
+                        <input name="senha" className="inputLogin" type="password" id="senha" required placeholder="Digite sua senha" />
+                        <VisualizarSenha className="olhoLogin" onClick={() => ShowPassword('senha')}/>
+                    </div>
+                    
+                    <Button text="Entrar" type="button" className="btnLogin"></Button>
 
                 </form>
 
            
-        )
-    }
+    )
 }
